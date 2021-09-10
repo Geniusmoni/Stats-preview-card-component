@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200&display=swap');
+*{
+    box-sizing: border-box;
+}
 body{
     font-size: 15px;
-    box-sizing: border-box;
     background-color: black;
     font-family: 'Lexend Deca', sans-serif;
 }
@@ -10,23 +12,17 @@ body{
     margin: 90px 90px 90px 90px;
     background-color:hsl(244, 38%, 16%);
     font-size: 16px;
-    /* flex-wrap: wrap; */
    
 
 }
 img{
-    filter:hsl(277, 64%, 61%)(100%);
-    border-radius: 10px;
-}
-.container-2{
-    display: flex;
-    flex-direction: column;
-
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 h2{
     font-weight: bolder;
 }
-.container-3{
+.flex_item{
     padding: 90px 70px 5px 70px;
 }
 .highlight{
@@ -37,18 +33,18 @@ h3{
     margin-bottom: 0px;
     font-weight: bolder;
 }
-.item{
+.sub_item{
     display: flex;
     color:hsl(0, 0%, 100%);
     padding: 0px;
 }
-.item2{
+.sub_item2{
     display: flex;
     flex-direction: column;
     padding: 20px;
     margin: 0px;
 }
-.item3{
+.sub_item3{
     color:hsl(0, 0%, 100%);
 }
 p{
@@ -58,13 +54,14 @@ p{
 @media screen and (max-width:900px){
     .container{
         flex-direction: column-reverse;
-        border-radius:10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
     }
-    .item{
+    .sub_item{
         flex-direction: column;
-       text-align: center;
+        text-align: center;
     }
-    .item2{
+    .sub_item2{
         padding: 0px;
     }
     p{
@@ -75,6 +72,10 @@ p{
         text-align: center;
     }
 }
+
+
+
+
 
 
 
